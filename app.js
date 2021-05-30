@@ -3,6 +3,11 @@ const scrollable = document.querySelector(".scrollable");
 const content = document.querySelector(".content");
 const imgSections = [...document.querySelectorAll(".img-section")];
 const images = [...document.querySelectorAll(".img")];
+const appTitle = document.querySelector(".app-title");
+
+appTitle.addEventListener("click", () => {
+  window.location.href = "/";
+});
 
 // set background for images
 images.forEach((image, idx) => {
