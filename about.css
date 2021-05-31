@@ -64,12 +64,11 @@ body {
   transform: rotate(-45deg);
 }
 
-.header,
-#app-header {
+.header {
   position: fixed;
   top: 2%;
   left: 2%;
-  width: 29%;
+  width: 96%;
   z-index: 2;
   mix-blend-mode: difference;
   color: #ffffff;
@@ -230,7 +229,7 @@ section {
 
 .proj-info-1 {
   position: absolute;
-  left: 43%;
+  left: 44%;
   bottom: 5%;
   text-align: left;
 }
@@ -245,7 +244,7 @@ section {
 
 .proj-info-2 {
   position: absolute;
-  right: 33%;
+  right: 34%;
   bottom: 10%;
   text-align: right;
 }
@@ -260,7 +259,7 @@ section {
 
 .proj-info-3 {
   position: absolute;
-  right: 28%;
+  right: 34%;
   bottom: 10%;
   text-align: right;
 }
@@ -290,18 +289,14 @@ section {
     /* display: block; */
     font-size: 20px !important;
   }
-  .header {
-    width: 46%;
-  }
 }
 
 .about-wrapper {
-  position: relative;
-  /* position: absolute; */
+  position: absolute;
   top: 50%;
   left: 50%;
   /* margin-left: auto;
-  margin-right: auto; */
+    margin-right: auto; */
   width: 50%;
   transform: translate(-50%, -50%);
 }
