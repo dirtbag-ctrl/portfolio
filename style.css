@@ -352,7 +352,15 @@ section {
 
   .contact {
     top: 12%;
+    right: 2%;
   }
+  .contact-links {
+    font-size: 16px !important;
+  }
+  .copyright {
+    left: 3%;
+  }
+
   .wrap p {
     /* display: block; */
     font-size: 20px !important;
