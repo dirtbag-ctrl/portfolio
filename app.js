@@ -4,6 +4,8 @@ const content = document.querySelector(".content");
 const imgSections = [...document.querySelectorAll(".img-section")];
 const images = [...document.querySelectorAll(".img")];
 const appTitle = document.querySelector(".app-title");
+const hamburger1 = document.querySelector(".hamburger-0");
+const hamburger2 = document.querySelector(".hamburger-1");
 
 appTitle.addEventListener("click", () => {
   window.location.href = "/";
@@ -59,6 +61,8 @@ function displayWraps() {
 
 function toggleMenu() {
   if (menu.classList.contains("active")) {
+    hamburger1.style.backgroundColor = "black";
+    hamburger2.style.backgroundColor = "black";
     menuTog.classList.remove("active");
     toggleMenuWraps(false);
     setTimeout(() => {
@@ -68,6 +72,9 @@ function toggleMenu() {
       toggleWraps(true);
     }, 300);
   } else {
+    hamburger1.style.backgroundColor = "white";
+    hamburger2.style.backgroundColor = "white";
+
     menuTog.classList.add("active");
     toggleWraps(false);
     setTimeout(() => {

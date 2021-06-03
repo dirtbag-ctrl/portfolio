@@ -27,7 +27,7 @@ a {
 html,
 body {
   width: 100%;
-  background-color: var(--main-bg-color);
+  background-color: #e8e8e1;
   overscroll-behavior: none;
 }
 
@@ -42,14 +42,17 @@ body {
   cursor: pointer;
   justify-content: space-between;
   z-index: 3;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference !important; */
 }
 
 .menu-tog span {
   position: relative;
   width: 100%;
   height: 2px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-color: black;
+  mix-blend-mode: difference;
+  /* color: #ffffff; */
   transition: 0.5s;
   transform-origin: center;
 }
@@ -64,15 +67,15 @@ body {
   transform: rotate(-45deg);
 }
 
-.header,
-#app-header {
+.header {
   position: fixed;
   top: 2%;
   left: 2%;
   width: 29%;
   z-index: 2;
-  mix-blend-mode: difference;
-  color: #ffffff;
+  /* mix-blend-mode: difference !important; */
+  /* color: #ffffff; */
+  color: black;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -86,6 +89,8 @@ h1 {
 
 .app-title {
   font-size: 20px;
+  /* color: #ffffff; */
+  color: black;
 }
 
 .info-text {
@@ -273,13 +278,13 @@ section {
   height: 100%;
   background-size: cover;
   background-position: center;
-  /* filter: grayscale(20%) sepia(20%); */
+  /* filter: grayscale(5%) sepia(5%); */
 }
 
 .about-wrapper {
   position: relative;
   /* position: absolute; */
-  top: 50%;
+  margin-top: 30%;
   left: 50%;
   /* margin-left: auto;
   margin-right: auto; */
@@ -294,16 +299,17 @@ section {
 /* Project Styles */
 .project-page {
   text-align: center !important;
-  /* width: 90%; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 100px;
   padding-right: 100px;
-  /* padding: 40px; */
+  position: relative;
+  z-index: 0;
 }
 .intro-wrapper {
   position: relative;
-  margin-top: 8%;
+  margin-top: 5%;
+  background-color: var(--main-bg-color) !important;
   text-align: center;
 }
 
