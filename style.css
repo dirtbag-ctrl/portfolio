@@ -308,7 +308,7 @@ section {
 }
 .intro-wrapper {
   position: relative;
-  margin-top: 5%;
+  margin-top: 10%;
   background-color: var(--main-bg-color) !important;
   text-align: center;
 }
@@ -349,6 +349,21 @@ section {
   line-height: 25px;
 }
 
+.project-screenshots {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-screenshots img {
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .app-title {
@@ -383,7 +398,7 @@ section {
     margin-bottom: 5px;
   }
   .intro-wrapper {
-    margin-top: 15%;
+    margin-top: 20%;
   }
 
   .project-title h1 {
@@ -391,5 +406,8 @@ section {
   }
   .project-description-wrapper {
     width: 80%;
+  }
+  .project-screenshots {
+    flex-direction: column;
   }
 }
