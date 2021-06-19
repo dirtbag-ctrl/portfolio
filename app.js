@@ -139,9 +139,10 @@ function scroll() {
 displayWraps();
 init();
 //test
+
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     window.scrollTo(0, 1);
-  }, 200);
+  }, 1500);
   scroll();
 });
